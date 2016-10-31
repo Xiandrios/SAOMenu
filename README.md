@@ -10,7 +10,8 @@ No installation needed, its all in html, css and JavaScritp.
 
 ## Usage
 
-Copy the repository and open with a browser the index.html.
+1. Copy the repository and open with a browser the index.html.
+2. Click in the page using middle mouse button.
 
 ## Contributing
 
