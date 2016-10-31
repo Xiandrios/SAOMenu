@@ -1,6 +1,6 @@
 # SAO HTML Menu
 
-This is me being bored and wanting to do something different. So I've decided to write a html menu that would consist of mimicing the sword art online menu.
+This is me being bored and wanting to do something different. So I've decided to write a html menu that would consist of mimicking the sword art online menu.
 
 ![Screen Preview](https://raw.githubusercontent.com/Xiandrios/SAOMenu/master/Screen%20Preview.png "Screen Preview")
 
