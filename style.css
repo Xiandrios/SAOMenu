@@ -1,0 +1,131 @@
+@font-face{
+  font-family:sao;
+  src: url(sword_art_online_font_by_darkblackswords-d5nssbp.otf);
+}
+body{background-color:black;font-family:'sao';}
+#menuWrapper{
+  display:none;
+  vertical-align:top;
+}
+.menuItems{
+  background-color:#F2F2F2;
+  border:1px solid #B8B8B8;
+  border-radius:35px;
+  cursor:pointer;
+  display:inline-block;
+  height:70px;
+  margin-top:15px;
+  width:70px;
+}
+.menuItemsDarkCircle{
+  background-color:#000;
+  border-radius:35px;
+  display:inline-block;
+  height:64px;
+  margin:3px;
+  width:64px;
+}
+.menuItemsCenter{
+  background-color:#F2F2F2;
+  color:#B8B8B8;
+  border-radius:35px;
+  display:inline-block;
+  height:56px;
+  margin:4px;
+  overflow:hidden;
+  width:56px;
+}
+.menuCenterIcons{
+  height:56px;
+  margin-top: 4px;
+  text-align: center;
+  width: 56px;
+}
+.menuCenterIconsException{
+  margin-top:0;
+}
+.sideArrowWrapper{display:none;margin-left:5px;position:absolute;}
+.arrow-left{
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:25px solid #FFF;
+  display:inline-block;
+  height: 0;
+  margin-top:15px;
+  width: 0;
+}
+.arrowSubMenuBorderWrapper{
+  display:inline-block;
+  height:70px;
+  margin-top:2px;
+  margin-left:-4px;
+  vertical-align:top;
+}
+.arrowSubMenuHeight{
+    border-width: 2px;
+  border-style: solid;
+  height:45px;
+}
+.arrowSubMenuBorderBottom{
+  -webkit-border-image:
+    -webkit-gradient(linear, 0 100%, 0 0, from(white), to(rgba(0, 0, 0, 0.5))) 1 100%;
+  -webkit-border-image:
+    -webkit-linear-gradient(bottom,  white 75%, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image:
+    -moz-linear-gradient(bottom,  white 75%, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image:
+    -o-linear-gradient(bottom,  white 75%, rgba(0, 0, 0, 0)) 1 100%;
+  border-image:
+    linear-gradient(to top,  white 75%, rgba(0, 0, 0, 0)) 1 100%;
+}
+.arrowSubMenuBorderTop{
+  -webkit-border-image:
+    -webkit-gradient(linear, 0 0, 0 100%, from(white), to(rgba(0, 0, 0, 0.5))) 1 100%;
+  -webkit-border-image:
+    -webkit-linear-gradient( white 75%, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image:
+    -moz-linear-gradient( white 75%, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image:
+    -o-linear-gradient( white 75%, rgba(0, 0, 0, 0)) 1 100%;
+  border-image:
+    linear-gradient(to bottom, white 75%, rgba(0, 0, 0, 0)) 1 100%;
+}
+.subMenuItemWrapper{
+  display: inline-block;
+  vertical-align: top;
+}
+.subMenuItems{
+  background-color:#F2F2F2;
+  color:#a6a6a6;
+  cursor:pointer;
+  height:65px;
+  margin:2px 0;
+  width:250px;
+}
+.subMenuCircle{
+  background-color:#a6a6a6;
+  color:#F2F2F2;
+  border-radius:100%;
+  display:inline-block;
+  height:50px;
+  margin:8px;
+  width:50px;
+}
+.subMenuIcon{
+  margin-top: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+.subMenuTitle{
+  display: inline-block;
+  font-size: 1.3em;
+  line-height: 65px;
+  vertical-align: top;
+}
+.subMenuWrapper{
+  display:inline;
+}
+.subMenuItemWrapper{
+  display:none;
+}

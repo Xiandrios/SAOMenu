@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Menu</title>
+		<script src="https://use.fontawesome.com/b4291bb502.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="saoMenuApp.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/robotech-gp" type="text/css" />
+		<link rel="stylesheet" media="screen" href="style.css" type="text/css" />
+	</head>
+	<body ng-app='saoMenu'>
+		<div id='menuWrapper' ng-controller='mainMenu'>
+			<div ng-repeat="item in menuItems" class='menuItems' id='{{item.id}}' title="{{item.title}}" onClick="selectMenuItem(this.id);" data-sel='0'>
+				<div class='menuItemsDarkCircle'>
+					<div class='menuItemsCenter'>
+						<i ng-if="item.cssException == 0" class="fa {{item.ico}} fa-3x menuCenterIcons" aria-hidden="true"></i>
+						<i ng-if="item.cssException == 1" class="fa {{item.ico}} fa-3x menuCenterIcons menuCenterIconsException" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='sideArrowWrapper' ng-controller='subMenu'>
+			<div class="arrow-left"></div>
+			<div class='arrowSubMenuBorderWrapper'>
+				<div class='arrowSubMenuBorderBottom arrowSubMenuHeight'></div>
+				<div class='arrowSubMenuBorderTop arrowSubMenuHeight'></div>
+			</div>
+			<div class='subMenuWrapper'>
+				<div id='{{subItems.id}}' class='subMenuItemWrapper' ng-repeat='subItems in subMenuItems'>
+					<div ng-repeat='subItem in subItems.items' class='subMenuItems' id='{{subItem.id}}' onMouseOver="subMenuItemsMouseOver(this.id);" onMouseOut="subMenuItemsMouseOut(this.id);">
+						<div class='subMenuCircle'>
+							<i class="fa fa-info fa-lg subMenuIcon" aria-hidden="true"></i>
+						</div>
+						<div class='subMenuTitle'>{{subItem.name}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
