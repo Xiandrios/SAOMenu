@@ -2,7 +2,11 @@
   font-family:sao;
   src: url(sword_art_online_font_by_darkblackswords-d5nssbp.otf);
 }
-body{background-color:black;font-family:'sao';}
+body{
+  background-color:black;
+  background-image:url('Aincrad_1.png');
+  font-family:'sao';
+}
 #menuWrapper{
   display:none;
   vertical-align:top;
