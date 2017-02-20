@@ -8,7 +8,8 @@ body{
   font-family:'sao';
 }
 #menuWrapper{
-  display:none;
+  display:block;
+  position: absolute;
   vertical-align:top;
 }
 .menuItems{
@@ -53,6 +54,15 @@ body{
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right:25px solid #FFF;
+  display:inline-block;
+  height: 0;
+  margin-top:15px;
+  width: 0;
+}
+.arrow-right{
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left:25px solid #FFF;
   display:inline-block;
   height: 0;
   margin-top:15px;
